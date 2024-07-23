@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>second-portfolio</title>
+
+        <!-- 링크 -->
+        <link rel="icon" type="image/png" sizes="16x16" href="https://i.namu.wiki/i/RW1mGfRjqD9UCfyN3SsMFX6RkSuCeZq1WepL7heO3DAcP6weE7tqm0RXD6lhs5VC6HVGPMPa8j-2q9FMhiLaNdkZlE-HEt1mA88VlJT6JqRmy3kq2R7RHf_iQUonBczjjxqTUSX_hZ5lTHFZm-HuIA.svg" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- scroll color -->
+        <script src="./assets/js/jquery-3.6.1.js"></script>
+
+        <!-- 스크립트 -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <!-- <script src="js/jquery.counterup.min.js"></script> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer src="./assets/js/comm.js"></script>
+        <script defer src="./assets/js/main.js"></script>
+    </head>
+    <body>
+        <div id="u-skip">
+            <a href="#gnb">전체메뉴 바로가기</a>
+            <a href="#main">본문 바로가기</a>
+        </div>
+        <div id="wrap">
+            <!-- 60px 스크롤시 .active 추가 -->
+            <header id="header" class="theme-dark">
+                <div class="container">
+                    <h1 id="logo">
+                        <a href="#"> <img style="width: 20%; margin: 0 auto" src="https://i.namu.wiki/i/qRnyMvJ69TyPUcoilLWqAp6vtqRXr3-BT0QM3lsLnIPzawhmq7KDj4tRp6yoD9LWzGN4o59rYpSbCB2hWd54SjcCy1Fek2t76RxzbEPbe1mhYlH0wMYMIiQWGrqlONdckRSmxldZjNjxYoWHuUaiaQ.svg" alt="" /></a>
+                    </h1>
+                    <nav id="gnb">
+                        <!-- 메뉴 활성화 checked 추가 -->
+                        <input type="checkbox" name="btnMenu" id="btnMenu" class="blind" />
+                        <label for="btnMenu" class="label-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="blind">전체메뉴 보기</span>
+                        </label>
+                        <div class="menu-wrap">
+                            <div class="menu-logo">
+                                <img style="width: 20%; margin: 0 auto" src="https://i.namu.wiki/i/qRnyMvJ69TyPUcoilLWqAp6vtqRXr3-BT0QM3lsLnIPzawhmq7KDj4tRp6yoD9LWzGN4o59rYpSbCB2hWd54SjcCy1Fek2t76RxzbEPbe1mhYlH0wMYMIiQWGrqlONdckRSmxldZjNjxYoWHuUaiaQ.svg" alt="" />
+                            </div>
+                            <div class="top-menu">
+                                <!-- mobile 메뉴 클릭시 .active 추가 -->
+                                <dl>
+                                    <dt>
+                                        <a href="#">구단소개</a>
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="#">팀 문화</a>
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <a href="#">ESG</a>
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dt class="framer-4">
+                                        <a href="#">채용</a>
+                                    </dt>
+                                </dl>
+                                <dl>
+                                    <dt class="framer-5">
+                                        <a href="#">여기어때</a>
+                                    </dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </header>
+            <div class="swiper slide-intro">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <!-- desktop -->
+                            <source srcset="https://www.doosanbears.com/_next/image?url=https%3A%2F%2Fd3uesnxiude69b.cloudfront.net%2Fimgbbs%2F202405%2Fb22f47fb-5864-42b7-ab2e-febd5c585e93.jpg&w=1920&q=75" media="(min-width: 1280px)" />
+                            <!-- mobile & tablet -->
+                            <source srcset="https://www.doosanbears.com/_next/image?url=https%3A%2F%2Fd3uesnxiude69b.cloudfront.net%2Fimgbbs%2F202405%2Fb22f47fb-5864-42b7-ab2e-febd5c585e93.jpg&w=1920&q=75" />
+                            <img src="https://www.doosanbears.com/_next/image?url=https%3A%2F%2Fd3uesnxiude69b.cloudfront.net%2Fimgbbs%2F202405%2Fb22f47fb-5864-42b7-ab2e-febd5c585e93.jpg&w=1920&q=75" alt="" />
+                        </picture>
+                        <div class="slide-txt">
+                            <div class="container">
+                                <strong
+                                    >247 TEAM DOOSAN<br />
+                                    20’24’시즌 ‘V7’을 노리는 두산베어스가 24시간, 7일 내내 뜨겁게 응원을 보내는 팬들과 함께</strong
+                                >
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="./images/0WtnwdAiJ04VAtIXeSdT06p3uo.jpg" alt="" />
+                        </picture>
+                        <div class="slide-txt">
+                            <div class="container">
+                                <strong
+                                    >놀라운 경험으로 <br />
+                                    삶을 풍요롭게</strong
+                                >
+                            </div>
+                            <div class="download-box">
+                                <button class="apple-appstore">
+                                    <img src="./images/apple-logo.svg" alt="" />
+                                    <img src="./images/appstore.svg" alt="apple-appstore" />
+                                </button>
+                                <button class="google-play">
+                                    <img src="./images/google-logo.svg" alt="" />
+                                    <img src="./images/googleplay.svg" alt="google-play" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="./images/j7eUaQUYQXvQuC1UrLZjbeiyFdo.jpg" alt="" />
+                        </picture>
+                        <div class="slide-txt">
+                            <div class="container">
+                                <strong
+                                    >대한민국 1등 <br />
+                                    종합 숙박 앱</strong
+                                >
+                            </div>
+                            <div class="download-box">
+                                <button class="apple-appstore">
+                                    <img src="./images/apple-logo.svg" alt="" />
+                                    <img src="./images/appstore.svg" alt="apple-appstore" />
+                                </button>
+                                <button class="google-play">
+                                    <img src="./images/google-logo.svg" alt="" />
+                                    <img src="./images/googleplay.svg" alt="google-play" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pause/Play button -->
+                <button class="swiper-button-pause">Pause</button>
+            </div>
+            <main id="main">
+                <section id="sec-eft" class="sec-type1 sec-eft">
+                    <div class="container">
+                        <dl class="page-mid-title">
+                            <dt>
+                                여기어때는 오늘도 빠르게
+                                <br class="mo-ver" />
+                                성장하고 있습니다
+                            </dt>
+                        </dl>
+                        <ul class="number-list">
+                            <li>
+                                <p>
+                                    <span class="content" data-target="3600">0</span>
+                                </p>
+                                <span>누적 다운로드</span>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="content" data-target="440">0</span>
+                                </p>
+                                <span>월간 활성 사용자(MAU)</span>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="content" data-target="1890">0</span>
+                                </p>
+                                <span>누적 사용자</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sec-type2 sec-2 bg-grey">
+                    <div class="container">
+                        <div class="sec-inner">
+                            <div class="obj-line"></div>
+                            <div class="sec-head">
+                                <div class="sec-head-inner">
+                                    <div class="sec-head-teat">
+                                        <p class="sec-caption">신뢰가는 서비스를 제공하는 Lifestyle Facilitator</p>
+                                        <h2 class="sec-title">
+                                            <span class="sec-name">
+                                                여행과 여가의 <br class="br-mo" />
+                                                모든 경험을 연결합니다
+                                            </span>
+                                        </h2>
+                                    </div>
+                                    <div class="obj-airplane">
+                                        <img src="https://i.namu.wiki/i/AEMWnUh7c8JPVYTIWh_QDPP43JlkfioDp90zvl8uLtmzIcuoBVf3oKZRUBp5xFZssByek03hEOJGqbdQ8WKcV7-muiD-aXKtM18R0K3QiOf1-puDNjm6bN_ETaycMpY3O5C2DgqT4p8gxxRkjS9CjA.svg" alt="airplane" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sec-body">
+                                <div class="sub-section">
+                                    <div class="sub-section-wrap">
+                                        <div class="sub-section-body">
+                                            <div class="data-display">
+                                                <ul class="data-list">
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/SPACE RENTALS.png"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="SPACE RENTALS"
+                                                                                >SPACE RENTALS</span
+                                                                            >
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">SPACE RENTALS</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/HOME&VILLA.png"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="HOME&VILLA"
+                                                                                >HOME&VILLA</span
+                                                                            >
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">HOME&VILLA</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/domesticstays.png"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="DOMESTIC STAYS"
+                                                                                >DOMESTIC STAYS</span
+                                                                            >
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">DOMESTIC STAYS</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/interationalstays.png"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="INTERATION STAYS"
+                                                                                >INTERATION STAYS</span
+                                                                            >
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">INTERATION STAYS</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/flights.jpg"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="FLIGHTS">FLIGHTS</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">FLIGHTS</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/carrentals.jpg"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="CAR RENTALS"
+                                                                                >CAR RENTALS</span
+                                                                            >
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">CAR RENTALS</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="data-item">
+                                                        <div class="data-wrap">
+                                                            <a class="data-inner" href="#">
+                                                                <div class="picture">
+                                                                    <img
+                                                                        src="./images/activities.jpg"
+                                                                        alt="Space Rentals"
+                                                                    />
+                                                                    <div class="hover-text">
+                                                                        <span class="hover-text-inner">
+                                                                            <span data-text="ACTIVITIES"
+                                                                                >ACTIVITIES</span
+                                                                            >
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="data-title">ACTIVITIES</div>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <main id="section05">
+                <div class="main-port aos-init">
+                    <h2>
+                        <ul>
+                            <li>
+                                서비스의 시작을
+                                <br />
+                                <strong>여기어때</strong>와 함께
+                            </li>
+                        </ul>
+                    </h2>
+                    <ul class="swiper-wrapper">
+                        <div class="framer">
+                            <li class="swiper-slide2">
+                                <a href="#">
+                                    <img
+                                        src="./images/eIFXQ1VhalHr8I3hwj1GN5J5Lg.jpg"
+                                        class="img01"
+                                        alt="마케팅/사업제휴"
+                                    />
+
+                                    <div class="tit-view">
+                                        <span>
+                                            <strong>마케팅/사업제휴</strong>
+                                            <p>mkt@gccompany.co.kr</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide2">
+                                <a href="#">
+                                    <img
+                                        src="./images/hUsGXgYNHTg3eVEDBjIDWFAMHI.jpg"
+                                        class="img02"
+                                        alt="호텔/리조트"
+                                    />
+
+                                    <div class="tit-view">
+                                        <span>
+                                            <strong>호텔/리조트</strong>
+                                            <p>hotel_sales@gccompany.co.kr</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="framer">
+                            <li class="swiper-slide2">
+                                <a href="#">
+                                    <img
+                                        src="./images/YzXDR2rZ6nYjuOWyhFF3iZxWiM.jpg"
+                                        class="img03"
+                                        alt="펜션/캠핑/글램핑/게스트하우스"
+                                    />
+
+                                    <div class="tit-view">
+                                        <span>
+                                            <strong>펜션/캠핑/글램핑/게스트하우스</strong>
+                                            <p>pension@gccompany.co.kr</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide2">
+                                <a href="#">
+                                    <img src="./images/4Ofh1pYcyk8qLtAZmoAmrTIOGEI.jpg" class="img04" alt="레저/티켓" />
+
+                                    <div class="tit-view">
+                                        <span>
+                                            <strong>레저/티켓</strong>
+                                            <p>leisure@gccompany.co.kr</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="framer">
+                            <li class="swiper-slide2">
+                                <a href="#">
+                                    <img
+                                        src="./images/q2RVz61vH4YjqpR5OJ6vg2lWRk.jpg"
+                                        class="img05"
+                                        alt="홈&빌라 입점하기"
+                                    />
+
+                                    <div class="tit-view">
+                                        <span>
+                                            <strong>홈&빌라 입점하기</strong>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide2">
+                                <a href="#">
+                                    <img
+                                        src="./images/ryq7WbkRcsqbimUr3tsevqSHDIo.jpg"
+                                        class="img06"
+                                        alt="공간대여 입점하기"
+                                    />
+
+                                    <div class="tit-view">
+                                        <span>
+                                            <strong>공간대여 입점하기</strong>
+                                            <p>space@gccompany.co.kr</p>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </main>
+            <footer id="footer">
+                <div class="container">
+                    <ul class="util">
+                        <li>
+                            <a href="#"> 브랜드 리소스 </a>
+                        </li>
+                        <li>
+                            <a href="#">개임정보처리방침</a>
+                        </li>
+                    </ul>
+                    <address>
+                        (주) 여기어때컴퍼니 대표이사 : 정명훈
+                        <br class="m-true" />서울특별시 강남구 봉은사로 479, 479타워 11층 대표전화 :02)6749-9065, 이메일
+                        :info@gccompany.co.kr <br class="m-true" />사업자등록번호 :742-86-00224 통신판매번호
+                        :2017-서울강남-01779
+                        <br />
+                        관광사업자 등록번호 :제 1026-24호
+                    </address>
+                    <p class="footer-copy">Copyright ⓒ 2022 GC Company corp.</p>
+                    <p class="sns-link">
+                        <a href="#" class="youtube">
+                            <img src="./images/youtube.svg" alt="" />
+                        </a>
+                        <a href="#" class="twitter">
+                            <img src="./images/twitter.svg" alt="" />
+                        </a>
+                        <a href="#" class="instagram">
+                            <img src="./images/instagram.svg" alt="" />
+                        </a>
+                        <a href="#" class="blog">
+                            <img src="./images/blog.svg" alt="" />
+                        </a>
+                    </p>
+                    <p class="footer-logo">
+                        <a href="#">
+                            <img src="https://i.namu.wiki/i/ZIDZFth9ur_p0V79Aat6vlxhPeKdj0qUGXmvAS4rA_6LtBiy71X3nouxAWq6xI9WZlBCcKt3KE5C-9iASgWWCg.svg" alt="여기어때컴퍼니" />
+                        </a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
